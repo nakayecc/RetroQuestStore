@@ -11,6 +11,7 @@ p {
 
 }
 #nav {
+    display: inline-block;
     width: 100%;
     min-height: 50px;
     background-color: #333;
@@ -19,7 +20,7 @@ p {
     text-align: center;
     width: 100%;
     min-height: 300px;
-    background-color: #111111;
+    background-image: url("../img/header.png");
     color: white;
     margin: 0px;
 
@@ -27,7 +28,8 @@ p {
 #mainPage{
     margin-top: 3px;
     min-height: 500px;
-    background-color: aqua;
+    
+    background-image: url("../img/header.png");
 }
 
 #footer{
@@ -36,6 +38,30 @@ p {
     text-align: center;
     color: white;
 }
+#login_info{
+    display: inline-block;
+    /*margin-left: 2px;*/
+    min-width: 20%;
+
+    color: white;
+}
+#inside_menu{
+
+    display: inline-block;
+    /*margin-left: 0px;*/
+    width: 60%;
+}
+#level_info{
+    display: inline-block;
+    min-width: 20%;
+    text-align: right;
+
+    color: white;
+}
+#inside_login_box{
+    padding: 0 10px 0;
+
+}
 h1{
     padding-top: 35px;
     margin: 0px;
@@ -43,16 +69,22 @@ h1{
 }
 
 ul {
+    text-align: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    display: flex;
+    justify-content: center;
 }
 
 li {
+
     float: left;
 }
+
+
 
 li a {
     display: block;
