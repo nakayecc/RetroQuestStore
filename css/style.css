@@ -23,6 +23,22 @@ p {
     color: white;
     margin: 0px;
 
+}
+#mainPage{
+    margin-top: 3px;
+    min-height: 500px;
+    background-color: aqua;
+}
+
+#footer{
+    min-height: 50px;
+    background-color: #111111;
+    text-align: center;
+    color: white;
+}
+h1{
+    padding-top: 35px;
+    margin: 0px;
 
 }
 
