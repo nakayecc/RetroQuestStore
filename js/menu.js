@@ -1,8 +1,8 @@
 document.write('<div id="nav">\
-<div id="login_info"><div id="inside_login_box"> Logged as: User</div></div>\
-<div id="inside_menu"> <ul><li><a class="active" href="#home">STORE</a></li>\
+<div id="left_menu_item"><div id="menu_item_inside"> Logged as: User</div></div>\
+<div id="center_menu_item"> <ul><li><a class="active" href="#home">STORE</a></li>\
 <li><a href="#about">PROFILE</a></li></ul></div>\
-<div id="level_info"><div id="inside_login_box"> Level/money 50 / 1.000<br>\
+<div id="right_menu_item"><div id="menu_item_inside"> Level/money 50 / 1.000<br>\
     </div></div>\
 </div>\
 ')
