@@ -1,5 +1,6 @@
 body {
     background-image: url("../img/bg.png");
+    margin: 0;
 }
 p {
     color: red;
@@ -11,14 +12,14 @@ body{
 
 }
 #nav {
-    display: inline-block;
+    margin: 0;
     width: 100%;
-    min-height: 50px;
     background-color: #333;
 }
 header{
     text-align: center;
     width: 100%;
+    height: 100vh;
     min-height: 300px;
     background-image: url("../img/header.png");
     background-position: center;
@@ -42,8 +43,9 @@ footer{
 }
 #left_menu_item{
     display: inline-block;
-    /*margin-left: 2px;*/
+    float: left;
     min-width: 20%;
+
 
     color: white;
 }
@@ -55,13 +57,14 @@ footer{
 }
 #right_menu_item{
     display: inline-block;
+    float: right;
     min-width: 20%;
     text-align: right;
 
     color: white;
 }
 #menu_item_inside{
-    padding: 0 10px 0;
+    padding: 10px;
 
 }
 h1{
