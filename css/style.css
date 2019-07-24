@@ -65,8 +65,9 @@ div #user_box{
 
 
 
-section .profile{
-    height: 70vh;
+section.profile{
+    margin-top: 30px;
+    height: 40vh;
     width: 100%;
 
 }
@@ -78,7 +79,7 @@ section .profile{
     opacity: 0.7;
     background-color: rgb(24, 13, 13);
 }
-}
+
 
 .items{
     width: 100%;
@@ -95,11 +96,85 @@ section .profile{
 
 #profile_items{
     margin: 0;
+    padding: 0;
     min-height: 159px;
-    width: 64%;
-
     opacity: 0.7;
     background-color: rgb(24, 13, 13);
+}
+#profile_items h1{
+    margin: 0;
+    color: white;
+}
+
+.artifact_container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.artifact_overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 180px;
+    width: 180px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(219, 219, 219);
+    border-radius: 8px;
+}
+
+
+.artifact_container:hover .artifact_overlay {
+    opacity: 0.8;
+}
+
+.artifact_text_title {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.artifact_text_description {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    position: absolute;
+    font-style: italic;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.artifact_text_cost {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    position: absolute;
+    top: 86%;
+    right: -3%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.artifact_text_cost img.icon{
+    padding: 0 3px;
+    width: 20px;
+    height: 20px;
+    vertical-align: -5px;
+}
+
+section.items img{
+    align-content: center;
+    border-radius: 8px;
+    height: 180px;
+    width: 180px;
 }
 
 div .avatar{
@@ -142,11 +217,6 @@ img#menu_icon{
 }
 #menu_item_inside{
     padding: 13px 13px 13px 10px;
-
-}
-h1{
-    padding-top: 35px;
-    margin: 0px;
 
 }
 
