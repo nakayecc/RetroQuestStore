@@ -120,20 +120,24 @@ section {
 .player_info {
     position: relative;
     margin: 2%;
-    min-height: 159px;
+    min-height: 150px;
     width: 30%;
     /*flex-direction: column;*/
     align-content: center;
-    opacity: 0.7;
-    background-color: rgb(24, 13, 13);
+    /*opacity: 0.7;*/
+    /*background-color: rgb(24, 13, 13);*/
 }
 
 div#user_box {
-    position: relative;
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    position: absolute;
     display: inline-flex;
-    margin: 2%;
-    float: right;
+    margin: 3%;
     width: auto;
+    background-color: rgba(24, 13, 13,0.7)
 }
 
 div.avatar {
@@ -142,13 +146,14 @@ div.avatar {
     display: inline-flex;
     height: auto;
     width: 95px;
+    right: -14px;
 
 }
 
 img#avatar {
     position: absolute;
     display: inline-flex;
-    width: 90px;
+    width: 100%;
     z-index: 1;
 }
 
