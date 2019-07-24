@@ -3,15 +3,19 @@ body {
     margin: 0;
 }
 p {
-    color: red;
+    color: white;
+    text-align: left;
+    display: inline-flex;
+    margin-left: 10px;
 }
 body{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    background-image: url("../img/bg.png");
 
 }
-#nav {
+nav {
     margin: 0;
     width: 100%;
     background-color: #333;
@@ -28,11 +32,12 @@ header{
     margin: 0px;
 
 }
-section{
-    margin-top: 3px;
-    min-height: 500px;
 
-    background-image: url("../img/bg.png");
+section{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
 }
 
 footer{
@@ -41,6 +46,75 @@ footer{
     text-align: center;
     color: white;
 }
+
+.player_info{
+     margin: 2%;
+     min-height: 159px;
+     width: 30%;
+     /*flex-direction: column;*/
+     align-content: center;
+     opacity: 0.7;
+     background-color: rgb(24, 13, 13);
+}
+div #user_box{
+    display: inline-flex;
+    margin: 2%;
+    float: right;
+    width: auto;
+}
+
+
+
+section .profile{
+    height: 70vh;
+    width: 100%;
+
+}
+
+.container{
+    min-height: 159px;
+    width: 64%;
+    align-content: center;
+    opacity: 0.7;
+    background-color: rgb(24, 13, 13);
+}
+}
+
+.items{
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+#owned_items{
+    align-content: center;
+    text-align: center;
+
+}
+
+
+#profile_items{
+    margin: 0;
+    min-height: 159px;
+    width: 64%;
+
+    opacity: 0.7;
+    background-color: rgb(24, 13, 13);
+}
+
+div .avatar{
+    display: inline-flex;
+    height: auto;
+    width: 100%;
+
+}
+img#avatar{
+    display: inline-flex;
+    height: 155px;
+    width: 90px;
+    z-index: 1;
+}
+
 #left_menu_item{
     display: inline-block;
     float: left;
