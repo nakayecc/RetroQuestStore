@@ -2,25 +2,94 @@ body {
     background-image: url("../img/bg.png");
     margin: 0;
 }
+
 p {
     color: white;
     text-align: left;
     display: inline-flex;
     margin-left: 10px;
 }
-body{
+
+body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-image: url("../img/bg.png");
 
 }
+
 nav {
     margin: 0;
     width: 100%;
     background-color: #333;
 }
-header{
+
+#center_menu_item {
+
+    display: inline-block;
+    /*margin-left: 0px;*/
+    width: 60%;
+}
+
+#right_menu_item {
+    display: inline-block;
+    float: right;
+    min-width: 20%;
+    text-align: right;
+
+    color: white;
+}
+
+#menu_item_inside {
+    padding: 13px 13px 13px 10px;
+
+}
+
+#left_menu_item {
+    display: inline-block;
+    float: left;
+    min-width: 20%;
+    color: white;
+}
+
+img#menu_icon {
+    vertical-align: bottom;
+
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+
+    float: left;
+}
+
+
+li a {
+    margin: 0;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    margin: 0;
+    background-color: #111;
+}
+
+
+header {
     text-align: center;
     width: 100%;
     height: 60vh;
@@ -33,46 +102,58 @@ header{
 
 }
 
-section{
+section {
+    position: relative;
     justify-content: center;
     align-items: center;
     width: 100%;
     display: flex;
 }
 
-footer{
-    min-height: 50px;
-    background-color: #111111;
-    text-align: center;
-    color: white;
-}
-
-.player_info{
-     margin: 2%;
-     min-height: 159px;
-     width: 30%;
-     /*flex-direction: column;*/
-     align-content: center;
-     opacity: 0.7;
-     background-color: rgb(24, 13, 13);
-}
-div #user_box{
-    display: inline-flex;
-    margin: 2%;
-    float: right;
-    width: auto;
-}
-
-
-
-section.profile{
+.profile {
     margin-top: 30px;
     height: 40vh;
     width: 100%;
 
 }
 
-.container{
+.player_info {
+    position: relative;
+    margin: 2%;
+    min-height: 159px;
+    width: 30%;
+    /*flex-direction: column;*/
+    align-content: center;
+    opacity: 0.7;
+    background-color: rgb(24, 13, 13);
+}
+
+div#user_box {
+    position: relative;
+    display: inline-flex;
+    margin: 2%;
+    float: right;
+    width: auto;
+}
+
+div.avatar {
+    position: relative;
+    margin: 0;
+    display: inline-flex;
+    height: auto;
+    width: 95px;
+
+}
+
+img#avatar {
+    position: absolute;
+    display: inline-flex;
+    width: 90px;
+    z-index: 1;
+}
+
+
+.container {
     min-height: 159px;
     width: 64%;
     align-content: center;
@@ -81,27 +162,29 @@ section.profile{
 }
 
 
-.items{
+.items {
     width: 100%;
     align-content: center;
     text-align: center;
     justify-content: center;
 }
-#owned_items{
+
+#owned_items {
     align-content: center;
     text-align: center;
 
 }
 
 
-#profile_items{
+#profile_items {
     margin: 0;
     padding: 0;
     min-height: 159px;
     opacity: 0.7;
     background-color: rgb(24, 13, 13);
 }
-#profile_items h1{
+
+#profile_items h1 {
     margin: 0;
     color: white;
 }
@@ -163,90 +246,24 @@ section.profile{
     -ms-transform: translate(-50%, -50%);
 }
 
-.artifact_text_cost img.icon{
+.artifact_text_cost img.icon {
     padding: 0 3px;
     width: 20px;
     height: 20px;
     vertical-align: -5px;
 }
 
-section.items img{
+section.items img {
     align-content: center;
     border-radius: 8px;
     height: 180px;
     width: 180px;
 }
 
-div .avatar{
-    display: inline-flex;
-    height: auto;
-    width: 100%;
 
-}
-img#avatar{
-    display: inline-flex;
-    height: 155px;
-    width: 90px;
-    z-index: 1;
-}
-
-#left_menu_item{
-    display: inline-block;
-    float: left;
-    min-width: 20%;
-    color: white;
-}
-
-img#menu_icon{
-    vertical-align: bottom;
-
-}
-#center_menu_item{
-
-    display: inline-block;
-    /*margin-left: 0px;*/
-    width: 60%;
-}
-#right_menu_item{
-    display: inline-block;
-    float: right;
-    min-width: 20%;
-    text-align: right;
-
-    color: white;
-}
-#menu_item_inside{
-    padding: 13px 13px 13px 10px;
-
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    display: flex;
-    justify-content: center;
-}
-
-li {
-
-    float: left;
-}
-
-
-
-li a {
-    margin: 0;
-    display: block;
-    color: white;
+footer {
+    min-height: 50px;
+    background-color: #111111;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    margin: 0;
-    background-color: #111;
+    color: white;
 }
