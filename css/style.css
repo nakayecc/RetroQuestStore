@@ -1,8 +1,3 @@
-body {
-    background-image: url("../img/bg.png");
-    margin: 0;
-}
-
 p {
     /* color: white;
     text-align: left;
@@ -14,6 +9,7 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    background-color: gray;
     background-image: url("../img/bg.png");
 
 }
@@ -90,10 +86,10 @@ nav li a:hover {
 
 header {
     text-align: center;
+    padding: 10px;
     width: 100%;
     height: 60vh;
     min-height: 300px;
-    background-image: url("../img/header.png");
     background-position: center;
     background-size: cover;
     color: white;
@@ -305,4 +301,15 @@ footer {
     background-color: #111111;
     text-align: center;
     color: white;
+}
+
+
+.content {
+    text-align: center;
+}
+
+.content img{
+    border: 5px solid;
+    margin: 20px 50px
+
 }
