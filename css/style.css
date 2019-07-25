@@ -48,7 +48,7 @@ img#menu_icon {
     vertical-align: bottom;
 }
 
-nav a{
+nav a {
     color: inherit;
 }
 
@@ -129,7 +129,7 @@ section.store img {
     margin: 20px auto 0;
 }
 
-.list a{
+.list a {
     color: inherit;
 }
 
@@ -145,7 +145,7 @@ section.store img {
     border-bottom-left-radius: 10px;
 }
 
-.list table tr:last-child  td:last-child, table tr:last-child:hover td:last-child{
+.list table tr:last-child td:last-child, table tr:last-child:hover td:last-child {
     border-bottom-right-radius: 10px;
 }
 
@@ -155,31 +155,31 @@ section.store img {
     padding: 0 10px 0;
 }
 
-.list tr:nth-child(even) td{
+.list tr:nth-child(even) td {
     background-color: rgb(194, 192, 192);
 }
 
-.list#users_list th:first-child, tr:first-child{
+.list#users_list th:first-child, tr:first-child {
     width: 220px;
 }
 
-.list#users_list th:nth-child(2), tr:nth-child(2){
+.list#users_list th:nth-child(2), tr:nth-child(2) {
     width: 200px;
 }
 
-.list#users_list th:nth-child(3), tr:nth-child(3){
+.list#users_list th:nth-child(3), tr:nth-child(3) {
     width: 220px;
 }
 
-.list#users_list th:nth-child(4), tr:nth-child(4){
+.list#users_list th:nth-child(4), tr:nth-child(4) {
     width: 100px;
 }
 
-.list tr:nth-child(n+2):hover{
+.list tr:nth-child(n+2):hover {
     color: #fff;
 }
 
-.list tr:nth-child(n+2):hover td{
+.list tr:nth-child(n+2):hover td {
     background-color: #333;
 }
 
@@ -273,7 +273,7 @@ div.player_info {
     /*background-color: rgb(24, 13, 13);*/
 }
 
-div#player_container{
+div#player_container {
     height: 40vh;
 }
 
@@ -346,7 +346,7 @@ div#profile_items {
 }
 
 
-img.artifact{
+img.artifact {
     align-content: center;
     border-radius: 8px;
     height: 180px;
@@ -368,8 +368,20 @@ footer {
     text-align: center;
 }
 
-.content img{
+.content img {
     border: 5px solid;
     margin: 20px 50px
 
+}
+
+div#login {
+    height: 90vh;
+}
+
+div#login form{
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
