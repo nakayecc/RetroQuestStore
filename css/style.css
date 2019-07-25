@@ -103,9 +103,7 @@ header {
 
 
 section {
-    display: block;
     margin-top: 3px;
-    min-height: 500px;
     background-image: url("../img/bg.png");
 }
 
@@ -196,10 +194,10 @@ section.store img {
 
 section.profile {
     position: relative;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    display: flex;
+    display: block;
 }
 
 div.profile {
@@ -207,20 +205,25 @@ div.profile {
     height: 40vh;
     width: 100%;
 
+
 }
 
 div.player_info {
     position: relative;
-    margin: 2%;
+    margin: 4%;
     min-height: 150px;
-    width: 30%;
+    width: 50%;
     /*flex-direction: column;*/
     align-content: center;
     /*opacity: 0.7;*/
     /*background-color: rgb(24, 13, 13);*/
 }
 
-div#user_box {
+div#player_container{
+    height: 40vh;
+}
+
+div.user_box {
     border-top-style: dotted;
     border-right-style: solid;
     border-bottom-style: dotted;
@@ -228,13 +231,13 @@ div#user_box {
     position: absolute;
     display: inline-flex;
     margin: 0;
-    width: auto;
+    width: 87%;
     background-color: rgba(24, 13, 13, 0.7);
     height: 112px;
 
 }
 
-div.avatar {
+div.profile_menu_image {
     position: relative;
     margin: 0;
     display: inline-flex;
@@ -244,43 +247,41 @@ div.avatar {
     top: -15px;
 }
 
-img#avatar {
+img.profile_menu_image {
     position: absolute;
     display: inline-flex;
     width: 100%;
     z-index: 1;
+    min-height: 114px;
 }
 
 
 div.container {
     min-height: 159px;
-    width: 64%;
+    width: 100%;
     align-content: center;
-    opacity: 0.7;
-    background-color: rgb(24, 13, 13);
+    display: inline-flex;
+    justify-content: center;
 }
 
 
-div.items {
+section.items {
     width: 100%;
     align-content: center;
     text-align: center;
     justify-content: center;
 }
 
-div#owned_items {
-    align-content: center;
-    text-align: center;
-
-}
 
 
 div#profile_items {
-    margin: 0;
     padding: 0;
     min-height: 159px;
     opacity: 0.7;
     background-color: rgb(24, 13, 13);
+    width: 93%;
+    margin-left: 0;
+    text-align: center;
 }
 
 #profile_items h1 {
@@ -289,7 +290,7 @@ div#profile_items {
 }
 
 
-section.items img {
+img.artifact{
     align-content: center;
     border-radius: 8px;
     height: 180px;
