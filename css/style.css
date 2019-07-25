@@ -2,36 +2,43 @@ body {
     background-image: url("../img/bg.png");
     margin: 0;
 }
+
 p {
-    color: red;
+    /* color: white;
+    text-align: left;
+    display: inline-flex;
+    margin-left: 10px; */
 }
-body{
+
+body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    background-image: url("../img/bg.png");
 
 }
-#nav {
+
+nav {
     margin: 0;
     width: 100%;
     background-color: #333;
 }
-header{
-    text-align: center;
-    width: 100%;
-    height: 60vh;
-    min-height: 300px;
-    background-image: url("../img/header.png");
-    background-position: center;
-    background-size: cover;
-    color: white;
-    margin: 0px;
 
-}
+
 section{
+    display: block;
     margin-top: 3px;
     min-height: 500px;
     background-image: url("../img/bg.png");
+}
+
+
+section.profile {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
 }
 
 section.store{
@@ -45,6 +52,7 @@ section.store{
 section.store h1{
     padding: 15px 0 10px;
     margin: 0px;
+    display: block;
 }
 
 section.store img{
@@ -73,9 +81,8 @@ section.store img{
     background-color: rgb(219, 219, 219);
     border-radius: 8px; 
   }
-  
 
-  .artifact_container:hover .artifact_overlay {
+.artifact_container:hover .artifact_overlay {
     opacity: 0.8;
   }
 
@@ -90,7 +97,7 @@ section.store img{
     -ms-transform: translate(-50%, -50%);
   }
 
-  .artifact_text_description {
+.artifact_text_description {
       color: rgb(0, 0, 0);
       font-size: 12px;
       position: absolute;
@@ -124,24 +131,15 @@ footer{
     text-align: center;
     color: white;
 }
-#left_menu_item{
-    display: inline-block;
-    float: left;
-    min-width: 20%;
-    color: white;
-}
 
-img#menu_icon{
-    vertical-align: bottom;
-
-}
-#center_menu_item{
+#center_menu_item {
 
     display: inline-block;
     /*margin-left: 0px;*/
     width: 60%;
 }
-#right_menu_item{
+
+#right_menu_item {
     display: inline-block;
     float: right;
     min-width: 20%;
@@ -149,15 +147,24 @@ img#menu_icon{
 
     color: white;
 }
-#menu_item_inside{
+
+#menu_item_inside {
     padding: 13px 13px 13px 10px;
 
 }
-h1{
-    padding-top: 35px;
-    margin: 0px;
+
+#left_menu_item {
+    display: inline-block;
+    float: left;
+    min-width: 20%;
+    color: white;
+}
+
+img#menu_icon {
+    vertical-align: bottom;
 
 }
+
 
 ul {
     list-style-type: none;
@@ -175,7 +182,6 @@ li {
 }
 
 
-
 li a {
     margin: 0;
     display: block;
@@ -188,4 +194,122 @@ li a {
 li a:hover {
     margin: 0;
     background-color: #111;
+}
+
+
+header {
+    text-align: center;
+    width: 100%;
+    height: 60vh;
+    min-height: 300px;
+    background-image: url("../img/header.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    margin: 0px;
+
+}
+
+
+.profile {
+    margin-top: 30px;
+    height: 40vh;
+    width: 100%;
+
+}
+
+.player_info {
+    position: relative;
+    margin: 2%;
+    min-height: 150px;
+    width: 30%;
+    /*flex-direction: column;*/
+    align-content: center;
+    /*opacity: 0.7;*/
+    /*background-color: rgb(24, 13, 13);*/
+}
+
+div#user_box {
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    position: absolute;
+    display: inline-flex;
+    margin: 0;
+    width: auto;
+    background-color: rgba(24, 13, 13,0.7);
+    height: 112px;
+    
+}
+
+div.avatar {
+    position: relative;
+    margin: 0;
+    display: inline-flex;
+    height: auto;
+    width: 95px;
+    right: 2px;
+    top: -15px;
+}
+
+img#avatar {
+    position: absolute;
+    display: inline-flex;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.container {
+    min-height: 159px;
+    width: 64%;
+    align-content: center;
+    opacity: 0.7;
+    background-color: rgb(24, 13, 13);
+}
+
+
+.items {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#owned_items {
+    align-content: center;
+    text-align: center;
+
+}
+
+
+#profile_items {
+    margin: 0;
+    padding: 0;
+    min-height: 159px;
+    opacity: 0.7;
+    background-color: rgb(24, 13, 13);
+}
+
+#profile_items h1 {
+    margin: 0;
+    color: white;
+}
+
+
+
+section.items img {
+    align-content: center;
+    border-radius: 8px;
+    height: 180px;
+    width: 180px;
+}
+
+
+footer {
+    min-height: 50px;
+    background-color: #111111;
+    text-align: center;
+    color: white;
 }
