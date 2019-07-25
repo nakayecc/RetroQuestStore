@@ -10,7 +10,7 @@ document.write('<nav>\
         </ul >\
     </div >\
     <div id="right_menu_item">\
-        <div id="menu_item_inside"><a href="#">Logout   </a></div>\
+        <div id="menu_item_inside"><a href="../index.html">Logout   </a></div>\
     </div>\
 </nav >\
     ')

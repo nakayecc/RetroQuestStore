@@ -11,7 +11,7 @@ document.write('<nav>\
     </div >\
     <div id="right_menu_item">\
         <div id="menu_item_inside">  50 <img id="menu_icon" src="../img/coin.png" width="20px"> \
-        1.000 <img id="menu_icon" src="../img/lvl.png" width="20px"> |  <a href="#">Logout</a></div>\
+        1.000 <img id="menu_icon" src="../img/lvl.png" width="20px"> |  <a href="../index.html">Logout</a></div>\
     </div>\
 </nav >\
     ')
