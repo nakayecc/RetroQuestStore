@@ -1,6 +1,6 @@
 document.write('<nav>\
     <div id = "left_menu_item">\
-        <div id="menu_item_inside"> Logged as: User</div >\
+        <div id="menu_item_inside"> Logged as: user</div >\
     </div >\
     <div id="center_menu_item">\
         <ul>\
