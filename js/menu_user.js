@@ -4,9 +4,9 @@ document.write('<nav>\
     </div >\
     <div id="center_menu_item">\
         <ul>\
-            <li><a class="active" href="index.html">HOME</a></li>\
-            <li><a class="active" href="store.html">STORE</a></li>\
-            <li><a href="profile.html">PROFILE</a></li >\
+            <li><a class="active" href="user_index.html">HOME</a></li>\
+            <li><a class="active" href="user_store.html">STORE</a></li>\
+            <li><a href="user_profile.html">PROFILE</a></li >\
         </ul >\
     </div >\
     <div id="right_menu_item">\
