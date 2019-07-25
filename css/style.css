@@ -137,8 +137,15 @@ div#user_box {
     display: inline-flex;
     margin: 3%;
     width: auto;
-    background-color: rgba(24, 13, 13,0.7)
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(24, 13, 13,0.8);
+    border-radius: 8px;
 }
+#user_box:hover {
+    opacity: 0.8;
+}
+
 
 div.avatar {
     position: relative;
@@ -147,6 +154,14 @@ div.avatar {
     height: auto;
     width: 95px;
     right: -14px;
+
+}
+img#avatar:hover #user_box {
+    opacity: 0.8;
+}
+
+img#avatar:hover{
+    opacity: 0.3;
 
 }
 
