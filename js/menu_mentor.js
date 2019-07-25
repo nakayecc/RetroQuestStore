@@ -1,6 +1,6 @@
 document.write('<nav>\
     <div id = "left_menu_item">\
-        <div id="menu_item_inside"> Logged as: User</div >\
+        <div id="menu_item_inside"> Logged as Mentor: User</div >\
     </div >\
     <div id="center_menu_item">\
         <ul>\
@@ -10,7 +10,7 @@ document.write('<nav>\
         </ul >\
     </div >\
     <div id="right_menu_item">\
-        <div id="menu_item_inside">  50 <img id="menu_icon" src="img/coin.png" width="20px"> 1.000 <img id="menu_icon" src="img/lvl.png" width="20px"></div>\
+        <div id="menu_item_inside"><a href="#">Logout   </a></div>\
     </div>\
 </nav >\
     ')

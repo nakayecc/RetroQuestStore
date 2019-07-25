@@ -52,6 +52,10 @@ img#menu_icon {
     vertical-align: bottom;
 }
 
+nav a{
+    color: inherit;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
