@@ -252,7 +252,7 @@ section.store img {
     height: 20px;
     vertical-align: -5px;
 }
-
+/*PROFIL*/
 section.profile {
     position: relative;
     justify-content: space-around;
@@ -262,15 +262,14 @@ section.profile {
     height: 90vh;
 }
 
-div.profile {
-    margin-top: 30px;
-    height: 40vh;
+.profile div.container {
+    min-height: 159px;
     width: 100%;
-
-
+    display: inline-flex;
+    justify-content: center;
 }
 
-div.player_info {
+.profile div.player_info {
     position: relative;
     margin: 4%;
     min-height: 150px;
@@ -281,11 +280,7 @@ div.player_info {
     /*background-color: rgb(24, 13, 13);*/
 }
 
-div#player_container {
-    height: 40vh;
-}
-
-div.user_box {
+.profile div.user_box {
     border-top-style: dotted;
     border-right-style: solid;
     border-bottom-style: dotted;
@@ -293,12 +288,23 @@ div.user_box {
     position: absolute;
     display: inline-flex;
     margin: 0;
+    left: 95px;
     width: 87%;
     background-color: rgba(24, 13, 13, 0.7);
     height: 112px;
 }
 
-div.profile_menu_image {
+.profile .user_box#showUserBox{
+    display: none;
+    transition: width 2s linear 1s;
+}
+
+.profile .user_box#showStats{
+    display: none;
+    top: 0;
+}
+
+.profile div.profile_menu_image {
     position: relative;
     margin: 0;
     display: inline-flex;
@@ -308,7 +314,19 @@ div.profile_menu_image {
     top: -15px;
 }
 
-img.profile_menu_image {
+.profile div#avatarBeforeClick{
+    display: block;
+    left: 853px;
+    top: 0;
+}
+
+.profile div#avatarAfterClick{
+    display: none;
+    top: 0px;
+}
+
+
+.profile img.profile_menu_image {
     position: absolute;
     display: inline-flex;
     width: 100%;
@@ -316,13 +334,12 @@ img.profile_menu_image {
     min-height: 114px;
 }
 
-div.container {
-    min-height: 159px;
-    width: 100%;
-    align-content: center;
-    display: inline-flex;
-    justify-content: center;
+.profile img:hover{
+    opacity: 0.4;
+    cursor: pointer;
 }
+
+/*KONIEC PROFILU*/
 
 
 section.items {
